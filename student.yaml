@@ -1,0 +1,7 @@
+- firstname: uma
+  lastname: chaliki
+  email: uma@gmail.com
+  address: # list of addresses starts with -
+  - type: perm
+    doorNo: 704
+    street: Barking

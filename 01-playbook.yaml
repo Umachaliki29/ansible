@@ -1,5 +1,5 @@
-- name: ping the server
-  hosts: frontend
+- name: ping the server 
+  hosts: frontend # The host which we wants to connect to
   tasks: # list of tasks
   - name: ping the server
-    ansible.builtin.ping:
+    ansible.builtin.ping: #module
