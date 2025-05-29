@@ -9,4 +9,10 @@
     vars: # adding vars in task level
       course: Ansible
     ansible.builtin.debug:
-      msg: "Hello {{course}}, Course Started at {{started}}" 
+      msg: "Hello {{course}}, Course Started at {{started}}"
+  - name: print course information
+      course: Ansible
+    ansible.builtin.debug:
+      msg: "Hello {{course}}, Course Started at {{started}}"  
+
+      ####  tasks level will print first ###
