@@ -1,6 +1,6 @@
 - name:
   hosts: local
-  connections: local
+  connection: local
   vars:
     course: ansible  #$VAR or ${VAR} in shell
     started: may 1 2025
