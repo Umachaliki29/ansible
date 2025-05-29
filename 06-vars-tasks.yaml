@@ -5,13 +5,12 @@
     course: Devops with aws  #$VAR or ${VAR} in shell
     started: may
   tasks:
-  - name: print course information
+  - name: print course information (with vars inside)
     vars: # adding vars in task level
       course: Ansible
     ansible.builtin.debug:
       msg: "Hello {{course}}, Course Started at {{started}}"
-  - name: print course information
-    course: Ansible
+  - name: print course information (without vars)
     ansible.builtin.debug:
       msg: "Hello {{course}}, Course Started at {{started}}"  
 
