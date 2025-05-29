@@ -1,0 +1,12 @@
+- name:
+  hosts: local
+  connection: local
+  vars: # adding vars in play level
+    course: Devops with aws  #$VAR or ${VAR} in shell
+    started: may
+  tasks:
+  - name: print course information
+    vars: # adding vars in task level
+      course: Ansible
+    ansible.builtin.debug:
+      msg: "Hello {{course}}, Course Started at {{started}}" 
