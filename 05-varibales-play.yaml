@@ -1,0 +1,10 @@
+- name:
+  hosts: local
+  connections: local
+  vars:
+    course: ansible  #$VAR or ${VAR} in shell
+    started: may 1 2025
+  tasks:
+  - name: print course information
+    ansible.builtin.debug:
+      msg: "Hello {{Ansible}}, Course Started at {{may 1 2025}}"  # keep these values in variables should be in double quotes
