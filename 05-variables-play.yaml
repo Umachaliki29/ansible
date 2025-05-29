@@ -7,4 +7,4 @@
   tasks:
   - name: print course information
     ansible.builtin.debug:
-      msg: "Hello {{Ansible}}, Course Started at {{may}}"  # keep these values in variables should be in double quotes
+      msg: "Hello {{course}}, Course Started at {{started}}"  # keep these values in variables should be in double quotes
