@@ -3,8 +3,8 @@
   connection: local
   vars:
     course: ansible  #$VAR or ${VAR} in shell
-    started: may 1 2025
+    started: may
   tasks:
   - name: print course information
     ansible.builtin.debug:
-      msg: "Hello {{Ansible}}, Course Started at {{may 1 2025}}"  # keep these values in variables should be in double quotes
+      msg: "Hello {{Ansible}}, Course Started at {{may}}"  # keep these values in variables should be in double quotes
