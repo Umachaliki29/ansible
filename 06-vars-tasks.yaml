@@ -11,7 +11,7 @@
     ansible.builtin.debug:
       msg: "Hello {{course}}, Course Started at {{started}}"
   - name: print course information
-      course: Ansible
+    course: Ansible
     ansible.builtin.debug:
       msg: "Hello {{course}}, Course Started at {{started}}"  
 
