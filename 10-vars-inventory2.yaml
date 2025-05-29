@@ -1,0 +1,6 @@
+- name: vars from inventory type2 #values from inventory
+  hosts: frontend
+  tasks:
+  - name: print course information
+    ansible.builtin.debug:
+      msg: "Hello I am learning {{course}}, duration is {{duration}}"
