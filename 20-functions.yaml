@@ -18,6 +18,7 @@
     ansible.builtin.debug:
       msg: "course info: {{course | dict2items }}"
   - name: check whether Ip address is valid or not 
-    vars: 234.345.678.234
+    vars: 
+      ip: 234.345.678.234
     ansible.builtin.debug:
       msg: "is {{ ip | ansible.utils.ipaddr}}"  
