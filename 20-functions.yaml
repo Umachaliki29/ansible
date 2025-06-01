@@ -1,7 +1,12 @@
 - name: anisible with functions
   hosts: local
   connection: local
+  vars:
+    persons: "{Uma,Tarak,sunil}"
   tasks:
   - name: checking default functions
     ansible.builtin.debug:
       msg: "hello, {{ person | default(Uma)}}"  # If value of any varaible is not defined then we can use default function
+  - name: checking default functions
+    ansible.builtin.debug:
+      msg: "hello, {{ person | split(',')}}"  # spliting the string
