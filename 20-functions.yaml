@@ -7,6 +7,6 @@
   - name: checking default functions
     ansible.builtin.debug:
       msg: "hello, {{ person | default(Uma) }}"  # If value of any varaible is not defined then we can use default function
-  - name: checking default functions
+  - name: print names 
     ansible.builtin.debug:
       msg: "hello, {{ persons | split(',') }}"  # spliting the string
