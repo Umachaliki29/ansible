@@ -9,3 +9,11 @@
   - name: print the outcome
     ansible.builtin.debug:
       msg: "{{ command_result }}"
+      
+  - name: not redirecting the output file
+    #ansible.builtin.command: "ls -ltr "
+    register: command_result #to store the output
+
+  - name: print the outcome
+    ansible.builtin.debug:
+      msg: "{{ command_result }}"
